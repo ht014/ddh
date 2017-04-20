@@ -1,4 +1,4 @@
-function [net, U, B] = train_nus(X, U, net, iter , lr,lambda,codelens,S)
+function [net, U, B] = train(X, U, net, iter , lr,lambda,codelens,S)
     batchsize = 50 ;
     N = size(X,4) ;
     index = randperm(N) ;
