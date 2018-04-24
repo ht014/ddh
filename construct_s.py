@@ -5,6 +5,7 @@ import os
 data = np.load('cifar_KNN.npz')['topK']# cifar_KNN.npz is the first KNN rank ,the top K nearest neighbor of  each image
 K1 = 20
 K2 = 30
+size = 10000  # the number of train data
 S = np.ones((size,size))*-1 
 for i in xrange(size):
     top = set(data[i][:K1+1]) #exclude itself so add one
