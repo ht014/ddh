@@ -7,7 +7,7 @@ K1 = 20
 K2 = 30
 S = np.ones((size,size))*-1 
 for i in xrange(size):
-    top = set(data[i][:K1+1]) #exclude ifself so add one
+    top = set(data[i][:K1+1]) #exclude itself so add one
     nums=[]
     idx = []
     for j in xrange(size):
